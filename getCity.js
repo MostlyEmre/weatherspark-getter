@@ -19,10 +19,9 @@ export default async function (city) {
       doc.querySelectorAll(".Search-Result-title").forEach((link) => {
         results.push({
           city: link.innerText,
-          url: link.href.replace("http://127.0.0.1:5500", ""),
+          url: link.href.replace("http://127.0.0.1:5500", "").replace("https://mostlyemre.github.io", ""),
         });
       });
-      console.log(results);
       return results;
     })
     .catch((error) => {

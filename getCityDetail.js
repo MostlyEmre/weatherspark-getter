@@ -22,7 +22,6 @@ export default async function (cityURL) {
       theParent.forEach((title) => {
         if (title.textContent.includes("Average Hourly Temperature")) {
           relevantParent = title.parentElement;
-          // console.log(relevantParent);
         }
       });
 
