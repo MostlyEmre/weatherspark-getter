@@ -1,7 +1,7 @@
 const download = function (href, name) {
   const link = document.createElement("a");
   link.download = name;
-  link.innerText = "Download";
+  link.innerText = "Download as PNG";
   // link.style.opacity = "1";
   document.querySelector(".download").append(link);
   link.href = href;
