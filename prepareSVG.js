@@ -31,4 +31,6 @@ export default function () {
   for (let i = 1; i < g.length; i++) {
     g[i].remove();
   }
+
+  svg.setAttribute("viewBox", "75 0 604 387");
 }
