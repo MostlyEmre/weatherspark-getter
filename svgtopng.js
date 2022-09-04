@@ -1,4 +1,5 @@
 const download = function (href, name) {
+  document.querySelector(".download").innerHTML = "";
   const link = document.createElement("a");
   link.download = name;
   link.innerText = "Download as PNG";
