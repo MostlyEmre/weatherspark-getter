@@ -19,7 +19,7 @@ export default async function (city) {
       doc.querySelectorAll(".Search-Result-title").forEach((link) => {
         results.push({
           city: link.innerText,
-          url: link.href.replace("http://127.0.0.1:5500", "").replace("https://mostlyemre.github.io", ""),
+          url: "/" + link.href.split("/").slice(-3).join("/"),
         });
       });
       return results;
