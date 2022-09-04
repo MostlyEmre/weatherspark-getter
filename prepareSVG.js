@@ -32,5 +32,5 @@ export default function () {
     g[i].remove();
   }
 
-  svg.setAttribute("viewBox", "75 0 604 387");
+  svg.setAttribute("viewBox", "75 10 603 375");
 }
