@@ -3,9 +3,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Weatherspark Getter</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <h1>WeatherSpark Getter</h1>
+    <p>Gets the SVG of the average temperature data from WeatherSpark.</p>
+    <!-- LEGEND -->
+    <div class="legend">
+      <p class="temp-name" style="background: rgba(92, 160, 180, 1)">frigid</p>
+      <p class="degree">-9°C</p>
+      <p class="temp-name" style="background: rgba(131, 194, 213, 1)">freezing</p>
+      <p class="degree">0°C</p>
+      <p class="temp-name" style="background: rgba(103, 149, 104, 1)">very cold</p>
+      <p class="degree">7°C</p>
+      <p class="temp-name" style="background: rgba(116, 168, 119, 1)">cold</p>
+      <p class="degree">13°C</p>
+      <p class="temp-name" style="background: rgba(141, 191, 113, 1)">cool</p>
+      <p class="degree">18°C</p>
+      <p class="temp-name" style="background: rgba(233, 204, 119, 1)">comfortable</p>
+      <p class="degree">24°C</p>
+      <p class="temp-name" style="background: rgba(199, 117, 96, 1)">warm</p>
+      <p class="degree">29°C</p>
+      <p class="temp-name" style="background: rgba(176, 91, 90, 1)">hot</p>
+      <p class="degree">35°C</p>
+      <p class="temp-name" style="background: rgba(152, 75, 68, 1)">sweltering</p>
+    </div>
+    <!-- SEARCH -->
+    <input type="text" name="city" id="city" placeholder="city search" />
+    <!-- SEARCH RESULTS -->
+    <div id="search-results"></div>
+    <!-- INFOGRAPHIC -->
+    <div id="infographic"></div>
+
+    <!-- Footer -->
+    <p>made by emre</p>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
