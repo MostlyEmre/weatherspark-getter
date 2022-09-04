@@ -23,9 +23,9 @@ export default function () {
   let canvas = document.createElement("canvas");
 
   image.onload = () => {
-    canvas.width = svg.clientWidth;
-    canvas.height = svg.clientHeight;
-    canvas.getContext("2d").drawImage(image, 0, 0, svg.clientWidth, svg.clientHeight);
+    canvas.width = 624 * 3;
+    canvas.height = 388.06 * 3;
+    canvas.getContext("2d").drawImage(image, 0, 0, canvas.width, canvas.height);
     download(canvas.toDataURL("image/png"), `${Date.now()}.png`);
   };
 }
