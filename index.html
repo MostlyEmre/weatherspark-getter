@@ -3,9 +3,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Weatherspark Getter</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      input {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      /* results section */
+      #search-results {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .result {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid #ccc;
+      }
+      .result:hover {
+        cursor: pointer;
+        background-color: lightgray;
+      }
+
+      /* legend section*/
+      .legend {
+        white-space: nowrap;
+        overflow-y: scroll;
+        border-top: 2px solid #ccc;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+
+      .legend-bit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .degree {
+        margin-top: -10px;
+      }
+
+      .temp-name {
+        padding: 4px 12px;
+        color: whitesmoke;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <h1>WeatherSpark Getter</h1>
